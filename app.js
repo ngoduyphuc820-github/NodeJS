@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const userRouters = require('./routes/users');
+const userRouters = require('./user-manage/user.router');
 
 app.use(express.json());
 app.use('/users', userRouters);
