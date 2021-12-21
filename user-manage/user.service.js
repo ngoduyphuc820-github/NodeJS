@@ -10,6 +10,8 @@ async function createUser(newUser) {
     newUser.lastname,
     newUser.age,
     newUser.address,
+    newUser.email,
+    newUser.password
   ]);
   await clientResult.end();
 }
@@ -45,6 +47,8 @@ async function updateUser(updateUser) {
     updateUser.age,
     updateUser.address,
     updateUser.id,
+    updateUser.email,
+    updateUser.password
   ]);
   await clientResult.end();
 }
